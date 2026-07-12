@@ -4,7 +4,6 @@
   imports =
     [ 
       ./hardware-configuration.nix
-      ./dms-configuration.nix    
       ./user-configuration.nix
       ./noctalia.nix
     ];
