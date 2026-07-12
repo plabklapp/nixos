@@ -6,7 +6,6 @@
       ./hardware-configuration.nix
       ./dms-configuration.nix    
       ./user-configuration.nix
-      ./google-chrome.nix
     ];
 
   boot.loader.systemd-boot.enable = true;
@@ -61,7 +60,6 @@
     };
     packages = with pkgs; [
       adwaita-fonts
-      noto-fonts
       liberation_ttf
     ];
     enableGhostscriptFonts = true;
@@ -81,10 +79,10 @@
     zip unrar git gh e2fsprogs xfsprogs eza dysk ncdu
   ];
 
-  /*
+  
   programs.firefox.enable = true;
   programs.firefox.languagePacks = [ "es-ES" ];
-  */
+  
 
   networking.firewall.enable = false;
 
@@ -122,8 +120,8 @@
 
   virtualisation.containers.registries.search = [ "docker.io" ];
 
-  services.flatpak.enable = true;
-  xdg.portal.enable = true;
+  #services.flatpak.enable = true;
+  #xdg.portal.enable = true;
 
 
   nix = {
