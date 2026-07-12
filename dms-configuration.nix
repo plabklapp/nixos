@@ -6,7 +6,7 @@
     alacritty xdg-user-dirs gsettings-desktop-schemas 
     adwaita-icon-theme nautilus transmission_4-gtk 
     celluloid adwaita-fonts nautilus 
-    transmission_4-gtk celluloid
+    transmission_4-gtk celluloid dconf-editor
   ];
 
   services.gvfs.enable = true;
