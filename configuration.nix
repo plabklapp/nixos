@@ -6,6 +6,7 @@
       ./hardware-configuration.nix
       ./dms-configuration.nix    
       ./user-configuration.nix
+      ./noctalia.nix
     ];
 
   boot.loader.systemd-boot.enable = true;
