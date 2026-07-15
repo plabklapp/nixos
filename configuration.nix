@@ -5,7 +5,7 @@
     [ 
       ./hardware-configuration.nix
       ./user-configuration.nix
-      ./noctalia.nix
+      ./plasma-configuration.nix
     ];
 
   boot.loader.systemd-boot.enable = true;
@@ -144,7 +144,7 @@
   programs.nix-index.enable = true;
   programs.command-not-found.enable = false;
 
-  services.upower.enable = true;     
+  # services.upower.enable = true;     
 
   programs.nix-ld.enable = true;
 
@@ -153,7 +153,7 @@
     ppdSupport = true;
   };
   
-  services.gvfs.enable = true;
+  # services.gvfs.enable = true;
 
 }
 
