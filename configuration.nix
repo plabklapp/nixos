@@ -5,7 +5,7 @@
     [ 
       ./hardware-configuration.nix
       ./user-configuration.nix
-      ./plasma-configuration.nix
+      ./cosmic-configuration.nix
     ];
 
   boot.loader.systemd-boot.enable = true;
@@ -80,8 +80,6 @@
   ];
 
   
-  programs.firefox.enable = true;
-  programs.firefox.languagePacks = [ "es-ES" ];
   
 
   networking.firewall.enable = false;
@@ -118,7 +116,12 @@
     };
   };
 
-  virtualisation.containers.registries.search = [ "docker.io" ];
+  virtualisation.containers.registries.settings= {
+    registry = [
+      { location = "docker.io"; }
+      { location = "quay.io"; }
+     ];
+  };
 
   #services.flatpak.enable = true;
   #xdg.portal.enable = true;
