@@ -156,7 +156,6 @@
     ppdSupport = true;
   };
   
-  # services.gvfs.enable = true;
 
 }
 
