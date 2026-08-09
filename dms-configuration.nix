@@ -3,10 +3,9 @@
 {
   environment.systemPackages = with pkgs; [
 
-    alacritty xdg-user-dirs gsettings-desktop-schemas 
+    ghostty xdg-user-dirs gsettings-desktop-schemas 
     adwaita-icon-theme nautilus transmission_4-gtk 
-    celluloid adwaita-fonts nautilus 
-    transmission_4-gtk celluloid dconf-editor
+    celluloid adwaita-fonts dconf-editor google-chrome
   ];
 
   services.gvfs.enable = true;
@@ -34,12 +33,12 @@
     enableDynamicTheming = true;
   };
 
-/*
+
   programs.dsearch = {
     enable = true;
     systemd.enable = true;
   };
-*/
+
 
   programs.dconf.enable = true;
 
