@@ -7,11 +7,13 @@
     adwaita-icon-theme nautilus transmission_4-gtk
     celluloid adwaita-fonts nautilus dconf-editor
     google-chrome noctalia-greeter xdg-desktop-portal-gnome  
+    android-tools 
   ];
 
-  programs.noctalia.enable = true;
-
   programs.niri.enable = true;
+
+  programs.noctalia.enable = true;
+  programs.noctalia.recommendedServices.enable = true;
 
   services.greetd.enable = true;
 
