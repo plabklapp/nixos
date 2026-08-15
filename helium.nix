@@ -1,14 +1,6 @@
-{ config, pkgs, ... }:
+{ config, pkgs, inputs, ... }:
 {
+  nixpkgs.overlays = [ inputs.helium.overlays.default ];
 
-  imports = [
-    inputs.helium.nixosModules.default
-  ];
-
-  programs.helium = {
-    enable = true;
-    flags = [
-      "--ozone-platform-hint=auto"
-    ];
-
+  environment.systemPackages = with pkgs;  [ helium ];
 }

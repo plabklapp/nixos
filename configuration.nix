@@ -6,6 +6,7 @@
       ./hardware-configuration.nix
       ./user-configuration.nix
       ./plasma-configuration.nix
+      ./helium.nix
     ];
 
   boot.loader.systemd-boot.enable = true;
@@ -14,9 +15,9 @@
   boot.kernelPackages = pkgs.linuxPackages_latest;
 
   networking.hostName = "pcalex";
-  networking.wireless.enable = true;  
+  # networking.wireless.enable = true;  
   networking.networkmanager.enable = true;
-  # networking.networkmanager.wifi.backend = "iwd";
+  networking.networkmanager.wifi.backend = "iwd";
 
   hardware.bluetooth.enable = true;
 

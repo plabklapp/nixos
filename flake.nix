@@ -3,7 +3,10 @@
 	
 	inputs = {
 		nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
-		helium.url = "github:oxcl/nix-flake-helium-browser";
+		helium = { 
+			url = "github:schembriaiden/helium-browser-nix-flake";
+			inputs.nixpkgs.follows = "nixpkgs";
+		};
 	};
 
   outputs = { self, nixpkgs, helium, ... }@inputs: {
