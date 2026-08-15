@@ -6,7 +6,6 @@
       ./hardware-configuration.nix
       ./user-configuration.nix
       ./plasma-configuration.nix
-      ./helium.nix
     ];
 
   boot.loader.systemd-boot.enable = true;
