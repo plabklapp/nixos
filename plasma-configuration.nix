@@ -7,7 +7,7 @@
   environment.plasma6.excludePackages = with pkgs.kdePackages; [ elisa discover qrca ];
 
   environment.systemPackages = with pkgs; [
-    qbittorrent haruna brave 
+    qbittorrent haruna google-chrome 
   ];
 
 }
