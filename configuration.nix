@@ -60,6 +60,7 @@
     };
     packages = with pkgs; [
       adwaita-fonts
+      inter
       liberation_ttf
     ];
     enableGhostscriptFonts = true;
