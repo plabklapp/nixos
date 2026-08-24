@@ -2,7 +2,7 @@
 
 {
   environment.systemPackages = with pkgs; [
-    nautilus ptyxis
+    nautilus ptyxis google-chrome transmission_4-gtk celluloid
   ];
 
  services = {

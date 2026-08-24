@@ -5,7 +5,7 @@
     [ 
       ./hardware-configuration.nix
       ./user-configuration.nix
-      ./noctalia-configuration.nix
+      ./gnome-configuration.nix
     ];
 
   boot.loader.systemd-boot.enable = true;
@@ -125,8 +125,8 @@
      ];
   };
 
-  #services.flatpak.enable = true;
-  #xdg.portal.enable = true;
+  services.flatpak.enable = true;
+  xdg.portal.enable = true;
 
 
   nix = {
