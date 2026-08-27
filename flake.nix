@@ -7,6 +7,7 @@
 			url = "github:schembriaiden/helium-browser-nix-flake";
 			inputs.nixpkgs.follows = "nixpkgs";
 		}; */
+                umbriel.url = "git+https://github.com/noctalia-dev/umbriel";
 	};
 
   outputs = { self, nixpkgs, ... }@inputs: {

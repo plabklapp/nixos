@@ -5,7 +5,7 @@
     [ 
       ./hardware-configuration.nix
       ./user-configuration.nix
-      ./cosmic-configuration.nix
+      ./noctalia-configuration.nix
     ];
 
   boot.loader.systemd-boot.enable = true;

@@ -1,6 +1,6 @@
 { config, pkgs, inputs, ... }:
 {
-
+  imports = [ inputs.umbriel.nixosModules.default ];
   environment.systemPackages = with pkgs; [
 
     ghostty xdg-user-dirs gsettings-desktop-schemas
@@ -10,7 +10,7 @@
     android-tools xwayland-satellite   
   ];
 
-  programs.niri.enable = true;
+  #programs.niri.enable = true;
 
   programs.noctalia.enable = true;
   programs.noctalia.recommendedServices.enable = true;
@@ -24,5 +24,8 @@
        };
     };
   services.gvfs.enable = true;
-
+  programs.umbriel.enable = true;
+  services.gnome.gnome-keyring.enable = true;
+  security.pam.services.login.enableGnomeKeyring = true;
+  programs.seahorse.enable = true;
 }
