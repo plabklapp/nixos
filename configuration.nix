@@ -15,8 +15,12 @@
 
   networking.hostName = "pcalex";
   # networking.wireless.enable = true;  
-  networking.networkmanager.enable = true;
-  networking.networkmanager.wifi.backend = "iwd";
+
+  networking.networkmanager = { 
+    enable = true;
+    wifi.backend = "iwd";
+    insertNameservers = [ "8.8.8.8" "8.8.4.4" ];
+  };
 
   hardware.bluetooth.enable = true;
 
