@@ -41,11 +41,11 @@
         "xdg-desktop-portal-umbriel": "xdg-desktop-portal-umbriel"
       },
       "locked": {
-        "lastModified": 1787861765,
-        "narHash": "sha256-ZPWDut7mhcgplMowbBwnJEtiMCklgAA3jSKLZN7cZ/w=",
+        "lastModified": 1787939203,
+        "narHash": "sha256-geqvggeMoFEpC+VivobuwVpkiORngMClGfJyPC1puog=",
         "ref": "refs/heads/main",
-        "rev": "9eb9865c08f49f8486e198c1282b4688a09c455d",
-        "revCount": 621,
+        "rev": "35a07aa2bf1b8d5330be0ebd2f531add728d2807",
+        "revCount": 640,
         "submodules": true,
         "type": "git",
         "url": "https://github.com/noctalia-dev/umbriel"
@@ -63,11 +63,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1787580138,
-        "narHash": "sha256-fqU58lZeFchlY5aqyQgIfrN5ec/jqbhXNwNxyL2lp/g=",
+        "lastModified": 1787856051,
+        "narHash": "sha256-+NwioGIiTws3zavU2Bo3v8fhcCcub1MNXjrS27IIUK8=",
         "owner": "noctalia-dev",
         "repo": "xdg-desktop-portal-umbriel",
-        "rev": "515c9f70f13ba4b4b9e19930b3e899c4ac8a50a4",
+        "rev": "ebcf96d2c9f184aea332db4354583c89155e5e9a",
         "type": "github"
       },
       "original": {
