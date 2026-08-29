@@ -81,7 +81,7 @@
     unrar p7zip aria2 dos2unix bash-completion 
     ntfs3g exfat exfatprogs distrobox unzip 
     efibootmgr android-tools devenv podman-compose 
-    zip unrar git gh e2fsprogs xfsprogs eza dysk ncdu
+    zip unrar git e2fsprogs xfsprogs eza dysk ncdu
     dig
   ];
 
@@ -108,6 +108,10 @@
     df = "df -h";
     free = "free -h";
     battery = "upower -i $(upower -e | grep 'battery') | grep percentage";
+  };
+
+  environment.sessionVariables = {
+    PATH = [ "$HOME/.local/bin" ];
   };
 
   services.earlyoom.enable = true;
