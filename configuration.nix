@@ -82,7 +82,7 @@
     ntfs3g exfat exfatprogs distrobox unzip 
     efibootmgr android-tools devenv podman-compose 
     zip unrar git e2fsprogs xfsprogs eza dysk ncdu
-    dig
+    dig gh
   ];
 
   
