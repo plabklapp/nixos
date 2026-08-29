@@ -7,7 +7,7 @@
     adwaita-icon-theme nautilus transmission_4-gtk
     celluloid adwaita-fonts nautilus dconf-editor
     google-chrome noctalia-greeter xdg-desktop-portal-gnome  
-    android-tools xwayland-satellite    
+    android-tools xwayland-satellite     
   ];
 
   programs.niri.enable = true;
