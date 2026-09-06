@@ -3,6 +3,7 @@
 {
   environment.systemPackages = with pkgs; [
     nautilus ptyxis google-chrome transmission_4-gtk celluloid
+    gnome-extension-manager
   ];
 
  services = {
