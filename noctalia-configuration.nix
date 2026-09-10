@@ -10,9 +10,9 @@
     android-tools xwayland-satellite     
   ];
 
-  # programs.niri.enable = true;
-  programs.umbriel.enable = true;
-  programs.umbriel.portalPackage = pkgs.xdg-desktop-portal-umbriel;
+  programs.niri.enable = true;
+  # programs.umbriel.enable = true;
+  # programs.umbriel.portalPackage = pkgs.xdg-desktop-portal-umbriel;
 
   programs.noctalia.enable = true;
   programs.noctalia.recommendedServices.enable = true;
