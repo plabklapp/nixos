@@ -9,18 +9,18 @@
   services.desktopManager.cosmic.enable = true;
 
   environment.cosmic.excludePackages = with pkgs; [
-  cosmic-store
-];
+    cosmic-store cosmic-reader
+  ];
 
   services.system76-scheduler.enable = true;
 
   environment.sessionVariables.COSMIC_DATA_CONTROL_ENABLED = 1;
 
   environment.systemPackages = with pkgs; [
-    transmission_4-gtk google-chrome
+    transmission_4-gtk google-chrome papers loupe
   ];
 
-  services.gnome.gnome-keyring.enable = true;
+  services.oo7.enable = true;
   programs.seahorse.enable = true;
 }
 
