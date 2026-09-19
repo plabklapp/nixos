@@ -5,7 +5,7 @@
     [ 
       ./hardware-configuration.nix
       ./user-configuration.nix
-      ./cosmic-configuration.nix
+      ./gnome-configuration.nix
     ];
 
   boot.loader.systemd-boot.enable = true;

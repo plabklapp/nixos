@@ -2,8 +2,9 @@
 
 {
   environment.systemPackages = with pkgs; [
-    nautilus ptyxis google-chrome transmission_4-gtk celluloid
-    gnome-extension-manager
+    nautilus ghostty google-chrome transmission_4-gtk celluloid
+    gnome-extension-manager papers loupe file-roller gnome-text-editor 
+    resources seahorse
   ];
 
  services = {
@@ -20,6 +21,10 @@
  environment.gnome.excludePackages = with pkgs; [
    gnome-tour gnome-user-docs gnome-console
  ];
+  
+  services.oo7.enable = true;
+  security.pam.services.alex.oo7.enable = true;
+
 
 }
 
