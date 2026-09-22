@@ -5,7 +5,7 @@
     [ 
       ./hardware-configuration.nix
       ./user-configuration.nix
-      ./gnome-configuration.nix
+      ./noctalia-configuration.nix
     ];
 
   boot.loader.systemd-boot.enable = true;
@@ -64,7 +64,6 @@
     };
     packages = with pkgs; [
       adwaita-fonts
-      inter
       liberation_ttf
     ];
     enableGhostscriptFonts = true;
@@ -84,9 +83,6 @@
     zip unrar git e2fsprogs xfsprogs eza dysk ncdu
     dig gh
   ];
-
-  
-  
 
   networking.firewall.enable = false;
 
@@ -163,6 +159,11 @@
     ppdSupport = true;
   };
   
+  services.flatpak.enable = true;
+  xdg.portal.enable = true;
+
+  services.oo7.enable = true;
+  security.pam.services.alex.enable = true;  
 
 }
 

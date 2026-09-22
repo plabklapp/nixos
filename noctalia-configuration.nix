@@ -4,13 +4,14 @@
   environment.systemPackages = with pkgs; [
 
     ghostty xdg-user-dirs gsettings-desktop-schemas
-    adwaita-icon-theme nautilus transmission_4-gtk
-    celluloid adwaita-fonts nautilus dconf-editor
-    google-chrome noctalia-greeter xdg-desktop-portal-gnome  
-    android-tools xwayland-satellite     
+    adwaita-icon-theme adwaita-fonts dconf-editor
+    noctalia-greeter android-tools xwayland-satellite     
+    nautilus
   ];
 
   programs.niri.enable = true;
+  programs.niri.useNautilus = true;
+
   # programs.umbriel.enable = true;
   # programs.umbriel.portalPackage = pkgs.xdg-desktop-portal-umbriel;
 
@@ -27,9 +28,9 @@
     };
 
   services.gvfs.enable = true;
-  services.gnome.gnome-keyring.enable = true;
-  security.pam.services.login.enableGnomeKeyring = true;
-  programs.seahorse.enable = true;
-  xdg.portal.enable = true;
+  # services.gnome.gnome-keyring.enable = true;
+  # security.pam.services.login.enableGnomeKeyring = true;
+  # programs.seahorse.enable = true;
+  
 
 }
