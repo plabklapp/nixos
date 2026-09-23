@@ -20,8 +20,8 @@
     transmission_4-gtk google-chrome papers loupe
   ];
 
-  services.oo7.enable = true;
-  programs.seahorse.enable = true;
+  #services.oo7.enable = true;
+  #programs.seahorse.enable = true;
 }
 
 
