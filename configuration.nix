@@ -5,7 +5,7 @@
     [ 
       ./hardware-configuration.nix
       ./user-configuration.nix
-      ./noctalia-configuration.nix
+      ./cosmic-configuration.nix
     ];
 
   boot.loader.systemd-boot.enable = true;
@@ -150,7 +150,7 @@
   programs.nix-index.enable = true;
   programs.command-not-found.enable = false;
 
-  # services.upower.enable = true;     
+  services.upower.enable = true;     
 
   programs.nix-ld.enable = true;
 
@@ -162,8 +162,8 @@
   services.flatpak.enable = true;
   xdg.portal.enable = true;
 
-  services.oo7.enable = true;
-  security.pam.services.alex.enable = true;  
+  #services.oo7.enable = true;
+  #security.pam.services.alex.enable = true;  
 
 }
 

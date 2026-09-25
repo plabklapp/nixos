@@ -17,7 +17,8 @@
   environment.sessionVariables.COSMIC_DATA_CONTROL_ENABLED = 1;
 
   environment.systemPackages = with pkgs; [
-    transmission_4-gtk google-chrome papers loupe
+    cosmic-viewer cosmic-ext-tweaks
+    transmission_4-gtk google-chrome papers file-roller
   ];
 
   #services.oo7.enable = true;
