@@ -28,9 +28,6 @@
       enable = true;
       restartIfChanged = true;
    };
-    enableSystemMonitoring = true;
-    #enableVPN = false;
-    enableDynamicTheming = true;
   };
 
 
