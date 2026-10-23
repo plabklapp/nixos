@@ -18,7 +18,6 @@
 
   environment.systemPackages = with pkgs; [
     cosmic-viewer cosmic-ext-tweaks
-    transmission_4-gtk google-chrome papers file-roller
   ];
 
   #services.oo7.enable = true;
